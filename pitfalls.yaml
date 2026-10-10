@@ -1,0 +1,197 @@
+# Machine-readable catalog of failure modes in archival JWST searches.
+# Each entry: id, domain, signature (how it looks), cause, check (how to reject it),
+# and where that check is implemented. Thresholds are the values used in the
+# measured runs; tune them per field.
+version: 1
+pitfalls:
+  - id: photoz-grid-ceiling
+    domain: photometric-redshift
+    signature: z_phot equals the template grid maximum exactly (12.87308 with the default EAZY grid)
+    cause: the fit ran off the top of the redshift grid; the value is a bound, not a measurement
+    check: reject z_phot within 1e-3 of the grid maximum, or extend the grid and refit
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_eazy_grid_edge
+  - id: photoz-chi2-extremes
+    domain: photometric-redshift
+    signature: chi2 far above the band count, or chi2 < 0.1
+    cause: high chi2 is a bad fit; very low chi2 means the fit is underconstrained by too few bands or noise-dominated fluxes
+    check: flag chi2 > 3x n_bands and chi2 < 0.1; require a minimum number of valid bands
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_photoz_quality
+  - id: sed-below-break
+    domain: photometric-redshift
+    signature: significant flux in bands bluer than the claimed Lyman break
+    cause: a real dropout has no flux below the break; detection there means low-z interloper or noise
+    check: require non-detection (< 2 sigma) in every band below the break and >= 2 detections above it
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_sed_consistency
+  - id: single-band-spike
+    domain: photometry
+    signature: one band 1 to 2 mag brighter than neighbouring bands; peak pixel dominates the aperture flux
+    cause: hot pixel, cosmic ray, or saturated neighbour in that mosaic only
+    check: compare each band to its neighbours; compare peak pixel to aperture flux; reject if one band carries the detection
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_single_band_spike
+  - id: v-shaped-sed
+    domain: photometry
+    signature: a dip of more than 1 mag between adjacent bands with recovery on both sides
+    cause: deblending split a source differently per band, or ICL / neighbour light contaminates some bands
+    check: reject SEDs with a > 1 mag dip; flag extreme slopes
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_sed_slope
+  - id: morphology-artifact
+    domain: detection
+    signature: unresolved below the PSF, or extreme elongation / asymmetry
+    cause: cosmic rays, spikes, residual bad pixels, or fragments
+    check: ellipticity, concentration and asymmetry limits; compare FWHM to the PSF
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_morphology
+  - id: band-coverage
+    domain: detection
+    signature: fewer than 4 valid bands at the position
+    cause: the source sits where some mosaics do not cover, so the SED is unconstrained
+    check: require a minimum band count from the weight maps, not the catalog
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_band_coverage
+  - id: edge-and-bright-star
+    domain: detection
+    signature: within the mosaic border, or within a few arcseconds of a star brighter than mag 18
+    cause: incomplete coverage at edges; diffraction spikes and halos around bright stars
+    check: distance to mosaic edge and to the nearest bright star
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_proximity
+  - id: gaia-foreground
+    domain: cross-match
+    signature: Gaia counterpart for a source with high z_phot
+    cause: foreground star with a red SED
+    check: cross-match Gaia before trusting any photo-z
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_multiwavelength
+  - id: duplicate-detection
+    domain: detection
+    signature: two catalog entries within 1 arcsecond
+    cause: deblending split one object, or two detection runs were merged
+    check: deduplicate on position before ranking
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_duplicates
+  - id: crowding
+    domain: deblending
+    signature: more than 30 catalog sources within 3 arcseconds
+    cause: deblender fragmented a bright extended galaxy or cluster core
+    check: flag by local source density
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_crowding
+  - id: bright-neighbour-fragment
+    domain: deblending
+    signature: a source several magnitudes brighter within a few arcseconds
+    cause: the candidate is a piece of the neighbour
+    check: flux ratio and distance to the brightest neighbour
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_bright_neighbor
+  - id: fragment-cluster
+    domain: deblending
+    signature: several fragment-flagged sources clustered together
+    cause: one extended object split into many
+    check: count fragment flags in the neighbourhood
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_fragment_cluster
+  - id: intracluster-light
+    domain: cluster-fields
+    signature: extended, low surface brightness, low chi2, near the cluster centre
+    cause: diffuse ICL detected as a source
+    check: combine extent, surface brightness and distance to the BCG
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_icl_contamination
+  - id: bright-unmatched
+    domain: cross-match
+    signature: brighter than mag 23 with zero reference-catalog matches
+    cause: the reference catalogs do not cover the position; a real object that bright is always catalogued
+    check: treat as a catalog gap, not a candidate
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_brightness_novelty
+  - id: catalog-gap
+    domain: cross-match
+    signature: unmatched fraction above ~10 percent for a field
+    cause: published catalogs for the field are missing from the reference set
+    check: list known catalogs per field and warn when any is absent
+    implemented_in: jwst-discovery/scripts/validation/scrutinize_candidates.py::check_catalog_gap
+  - id: colour-photometry-breakdown
+    domain: colour-selection
+    signature: colours with |value| > 5 mag concentrated in one field
+    cause: photometry bugs at faint magnitudes
+    check: require |colour| < 5 and S/N > 10 before any outlier ranking
+    implemented_in: jwst-discovery/scripts/experiments/color_outlier_search.py
+  - id: diffraction-spike
+    domain: colour-selection
+    signature: candidate lies along a six-vane PSF arm of a nearby bright star
+    cause: spike light with a weird colour is detected as a source
+    check: mask spike geometry around saturated stars; inspect cutouts
+    implemented_in: jwst-discovery/scripts/experiments/inspect_color_outliers.py
+  - id: nircam-sw-persistence
+    domain: time-domain
+    signature: 4 to 10x brightening in a short-wavelength filter with no change in a long-wavelength filter at the same epoch
+    cause: persistence ghost from a previous bright exposure on the SW detectors
+    check: require the variation in two filters; rate is about 6 per arcmin^2 per year at 5 sigma
+    implemented_in: jwst-nircam-timedomain/timedomain/diff_image.py (ratio filter)
+  - id: alignment-dipoles
+    domain: time-domain
+    signature: positive/negative residual pairs around stars at 0.4 to 0.5 px
+    cause: residual registration error set by centroid noise, not geometry
+    check: reject opposite-sign twins within a few PSF widths; affine alignment gains little over translation
+    implemented_in: jwst-nircam-timedomain/timedomain/align_epochs.py
+  - id: zogy-few-stars
+    domain: time-domain
+    signature: 10x more candidates after switching to ZOGY, all noise
+    cause: matching kernel ill-conditioned with fewer than ~100 high-S/N PSF stars
+    check: count usable PSF stars before choosing ZOGY
+    implemented_in: jwst-nircam-timedomain/experiments/diff_image_zogy.py
+  - id: miri-mask-scale
+    domain: time-domain
+    signature: 99.7 percent of MIRI pixels masked
+    cause: mask radii specified in pixels for NIRCam (0.03"/px) applied to MIRI (0.11"/px)
+    check: specify masks in arcseconds
+    implemented_in: jwst-nircam-timedomain/experiments/track_d_miri_download.py
+  - id: catalog-depth-dark
+    domain: cross-archive
+    signature: no catalog source within 1.5 arcseconds of a sub-mm or X-ray position
+    cause: the comparison catalog is shallower than the deep coadd; the source exists below the catalog threshold
+    check: forced photometry on the deepest available image at the position
+    implemented_in: jwst-nircam-timedomain/experiments/validate_alma_dark.py
+  - id: footprint-mismatch
+    domain: cross-archive
+    signature: no source in a reference catalog that nominally covers the field
+    cause: the position is outside that catalog's mosaic footprint
+    check: test the weight or coverage map at the position
+    implemented_in: jwst-nircam-timedomain/experiments/validate_alma_dark.py
+  - id: coordinate-rounding
+    domain: cross-match
+    signature: 0.36 arcsecond offsets between files
+    cause: RA/Dec rounded to 4 decimals in an intermediate file
+    check: keep full precision in every intermediate product
+  - id: pairwise-mover-counting
+    domain: moving-objects
+    signature: thousands of pairwise motion candidates, almost no linked tracks
+    cause: each epoch pair counted independently; noise matches do not chain
+    check: link pairs into tracks with consistent motion and position angle
+    implemented_in: jwst-nircam-timedomain/experiments/track_b_linker.py
+  - id: mast-product-list-hang
+    domain: archive-access
+    signature: get_product_list hangs or raises ChunkedEncodingError on programs with 1000+ products
+    cause: unreliable streaming for large product lists under concurrent requests
+    check: list the stpubdata S3 bucket directly and read pointing from FITS headers by byte range
+    implemented_in: jwst-nircam-timedomain/timedomain/download_direct_s3.py
+  - id: s3-anonymous-rate-limit
+    domain: archive-access
+    signature: Max Retries Exceeded above ~20 concurrent anonymous streams
+    cause: undocumented per-IP throttling on stpubdata
+    check: cap at 8 streams per IP with adaptive retry
+    implemented_in: jwst-nircam-timedomain/timedomain/download_epochs.py
+  - id: dja-no-list
+    domain: archive-access
+    signature: GET works, LIST denied on s3://grizli-v2/JwstMosaics/v7/
+    cause: bucket policy blocks enumeration
+    check: construct filenames from the published pattern
+    implemented_in: jwst-discovery/sidecar/jwst_pipeline/catalog_registry.py
+  - id: vizier-row-limit
+    domain: archive-access
+    signature: every query returns exactly 50 rows
+    cause: Vizier.ROW_LIMIT default; setting the class attribute is not always honoured
+    check: instantiate Vizier(row_limit=-1) per call
+    implemented_in: jwst-discovery/sidecar/jwst_pipeline/utils/catalog_downloader.py
+  - id: simbad-timeout
+    domain: archive-access
+    signature: SIMBAD query hangs on crowded cluster fields
+    cause: large result sets with the default timeout
+    check: 120 s timeout and a 50,000-row limit
+    implemented_in: jwst-discovery/sidecar/jwst_pipeline/stages/crossmatch.py
+  - id: sep-deblend-overflow
+    domain: detection
+    signature: SEP extraction fails on crowded cluster cores
+    cause: sub-object limit exceeded during deblending
+    check: raise sub_object_limit to 32768 and retry at 131072
+    implemented_in: jwst-discovery/sidecar/jwst_pipeline/stages/detect.py
