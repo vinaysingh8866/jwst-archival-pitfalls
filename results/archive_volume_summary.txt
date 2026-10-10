@@ -1,0 +1,57 @@
+====================================================================================================
+  JWST NIRCAM TIME-DOMAIN ARCHIVE — TOTAL SURVEY VOLUME
+====================================================================================================
+  Multi-epoch fields:                                    23
+  Total epoch-pairs (across best filters, combinatorial): 3,080
+  Total survey volume:                                   360.3  sq arcmin × yr
+
+  Per-field summary (best filter shown):
+               FIELD  BESTFLT  EPOCHS   SPAN(d)   CADENCE   EFF(yr)    AREA      VOLUME
+    --------------------------------------------------------------------------------
+       JADES-GOODS-S    F410M      53      1208     0.982     3.250    25.0       81.24
+          PRIMER-UDS    F277W      16      1228     0.681     2.289    30.0       68.66
+              NGDEEP    F410M      50      1208     0.977     3.234    20.0       64.68
+          Abell-2744    F200W      19      1086     0.789     2.347    10.0       23.47
+          MACS-J0416    F444W      10      1191     0.507     1.653    10.0       16.53
+           Abell-370    F200W      10      1125     0.528     1.626    10.0       16.26
+           CEERS-EGS    F115W       5      1096     0.290     0.871    15.0       13.06
+           PLCK-G165    F444W       6      1092     0.349     1.045    10.0       10.45
+          PEARLS-NEP    F150W       6       273     0.865     0.646    15.0        9.69
+          MACS-J1149    F150W       6       727     0.483     0.963    10.0        9.63
+         Abell-S1063    F150W       4      1094     0.227     0.680    10.0        6.80
+           RXC-J0600    F444W       4      1094     0.227     0.680    10.0        6.80
+             MS-0451    F277W       6       231     0.915     0.580    10.0        5.80
+          MACS-J0417    F150W       3      1089     0.159     0.472    10.0        4.72
+      Bullet-Cluster    F444W       3       366     0.431     0.432    10.0        4.32
+          Abell-1689    F150W       2       870     0.103     0.246    10.0        2.46
+         Cosmic-Gems    F444W       2       906     0.099     0.246    10.0        2.46
+          MACS-J0647    F200W       2       107     0.840     0.246    10.0        2.46
+          MACS-J1423    F150W       2      1104     0.082     0.246    10.0        2.46
+            RXJ-2129    F150W       2      1119     0.080     0.246    10.0        2.46
+          SMACS-0723    F090W       2       705     0.128     0.246    10.0        2.46
+         Sunrise-Arc    F150W       2      1074     0.084     0.246    10.0        2.46
+          Dragon-Arc    F444W       2        35     1.000     0.096    10.0        0.96
+
+====================================================================================================
+  EXPECTED REAL TRANSIENT DETECTIONS (assuming pipeline efficiency = 100%)
+====================================================================================================
+  Pessimistic  (1e-3 / sq arcmin / yr, conservative)       E[N] =    0.4 real SNe
+  Nominal      (5e-3 / sq arcmin / yr, Pan+ 2024 HST extrapolated)  E[N] =    1.8 real SNe
+  Optimistic   (3e-2 / sq arcmin / yr, Strolger+ 2020 deep + lensing)  E[N] =   10.8 real SNe
+
+  PILOT (5 fields, 1 filter) ACTUAL VOLUME:
+    36.2 sq arcmin × yr   →   E[N_pessimistic..optimistic] = 0.04 .. 1.09
+    Observed real SNe: 0    Predicted range covers 0 → consistent with non-detection.
+
+====================================================================================================
+  ANSWER TO 'HOW MUCH DATA DO WE NEED?'
+====================================================================================================
+  At     nominal rate, need 600 sq arcmin × yr  = 166.5% of total available archive volume  to expect 3 real SNe.
+  At pessimistic rate, need 3000 sq arcmin × yr  = 832.6% of total available archive volume  to expect 3 real SNe.
+
+  → If processing the FULL archive (no pipeline losses), we'd expect 2 real SNe at the nominal rate.
+  → If pipeline efficiency is 50% (T1.6 injection-recovery would tell us), divide by 2.
+  → Multi-filter cross-check at NIRCam SW+LW further reduces by ~30% (real SNe are detectable in BOTH but artifacts get cut).
+
+  PRACTICAL RECOMMENDATION:  process 100% of the public archive (130 (field,filter) pairs).
+  Expected real SNe = ~0 at 50% efficiency × 70% multi-filter survival.

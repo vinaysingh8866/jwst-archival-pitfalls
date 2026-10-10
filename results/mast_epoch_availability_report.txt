@@ -1,0 +1,212 @@
+==========================================================================================
+  MAST EPOCH AVAILABILITY — what we *can* download for difference imaging
+==========================================================================================
+  Generated: 2026-04-26T02:21:40
+  Fields queried:           29
+  Total NIRCam obs found:   3283
+  Unique (field, filter):   224
+
+------------------------------------------------------------------------------------------
+  USABLE FOR DIFFERENCE IMAGING (130 pairs):
+------------------------------------------------------------------------------------------
+  FIELD              FILTER  EPOCHS  OBS PROG    EARLIEST      LATEST     SPAN  MIN-SEP
+  Abell-1689         F115W        2    2    2  2023-02-15  2025-07-04   870.2d   870.2d
+  Abell-1689         F150W        2    2    2  2023-02-15  2025-07-04   870.3d   870.3d
+  Abell-1689         F200W        2    2    2  2023-02-15  2025-07-04   870.0d   870.0d
+  Abell-1689         F277W        2    2    2  2023-02-15  2025-07-04   870.2d   870.2d
+  Abell-1689         F356W        2    2    2  2023-02-15  2025-07-04   870.0d   870.0d
+  Abell-2744         F090W       15   32    7  2022-06-28  2024-12-11   896.8d     1.5d
+  Abell-2744         F115W       12   28    6  2022-06-29  2024-07-30   762.8d     3.3d
+  Abell-2744         F150W       11   16    6  2022-06-29  2024-11-12   866.9d     3.3d
+  Abell-2744         F200W       19  157    7  2022-06-29  2025-06-19  1085.9d     1.0d
+  Abell-2744         F277W       12   16    6  2022-06-29  2024-07-30   762.6d     3.4d
+  Abell-2744         F356W       14   19    7  2022-06-29  2024-07-30   762.7d     3.3d
+  Abell-2744         F410M        6    6    3  2022-11-02  2023-11-01   363.8d     1.8d
+  Abell-2744         F444W       17   21    7  2022-06-28  2024-12-12   897.1d     1.5d
+  Abell-370          F115W        6   13    5  2022-12-29  2026-01-27  1124.7d     1.1d
+  Abell-370          F150W        8   14    5  2022-12-29  2026-01-27  1124.9d     1.4d
+  Abell-370          F200W       10   16    6  2022-12-29  2026-01-27  1124.8d     2.2d
+  Abell-370          F277W        9   13    4  2022-12-29  2026-01-27  1124.9d     1.6d
+  Abell-370          F356W        7   10    5  2022-12-29  2026-01-27  1124.8d    28.7d
+  Abell-370          F410M        2    5    2  2022-12-29  2023-12-19   355.2d   355.2d
+  Abell-370          F444W        5    8    4  2022-12-29  2026-01-27  1124.7d     1.2d
+  Abell-S1063        F090W        2    2    2  2024-09-20  2025-07-02   284.8d   284.8d
+  Abell-S1063        F115W        4    4    3  2022-09-24  2025-07-02  1012.0d     2.2d
+  Abell-S1063        F150W        4    4    4  2022-09-24  2025-09-22  1093.7d    81.6d
+  Abell-S1063        F200W        3    3    3  2022-09-24  2025-06-30  1009.7d   275.1d
+  Abell-S1063        F277W        2    2    2  2024-09-27  2025-06-30   276.2d   276.2d
+  Abell-S1063        F444W        4    4    4  2022-09-24  2025-09-22  1093.7d    83.8d
+  Bullet-Cluster     F090W        2    2    1  2025-01-20  2025-03-27    66.3d    66.3d
+  Bullet-Cluster     F115W        2    2    1  2025-01-20  2025-03-27    66.5d    66.5d
+  Bullet-Cluster     F150W        2    2    2  2025-01-20  2026-01-21   366.6d   366.6d
+  Bullet-Cluster     F200W        2    2    1  2025-01-20  2025-03-27    66.5d    66.5d
+  Bullet-Cluster     F356W        2    2    1  2025-01-20  2025-03-27    66.5d    66.5d
+  Bullet-Cluster     F410M        2    2    1  2025-01-20  2025-03-27    66.3d    66.3d
+  Bullet-Cluster     F444W        3    3    2  2025-01-20  2026-01-21   366.4d    66.5d
+  CEERS-EGS          F090W        3    4    3  2023-06-26  2025-06-21   725.4d   170.2d
+  CEERS-EGS          F115W        5    6    3  2022-06-21  2025-06-21  1096.0d     3.2d
+  CEERS-EGS          F150W        4    4    3  2022-06-21  2025-06-21  1095.6d    88.4d
+  CEERS-EGS          F200W        5    5    4  2022-12-21  2025-06-21   912.5d     1.2d
+  CEERS-EGS          F277W        3    3    3  2022-12-24  2025-06-21   909.9d    88.9d
+  CEERS-EGS          F356W        4    4    3  2022-12-21  2025-06-21   913.0d     3.2d
+  CEERS-EGS          F444W        5    5    5  2022-12-21  2025-06-21   912.7d    82.0d
+  Cosmic-Gems        F150W        2    2    2  2023-09-08  2026-03-03   906.5d   906.5d
+  Cosmic-Gems        F444W        2    2    2  2023-09-08  2026-03-03   906.4d   906.4d
+  Dragon-Arc         F115W        2   33    2  2024-02-21  2024-03-27    34.9d    34.9d
+  Dragon-Arc         F150W        2   33    2  2024-02-10  2024-02-21    10.4d    10.4d
+  Dragon-Arc         F277W        2    9    2  2024-02-21  2024-03-27    34.9d    34.9d
+  Dragon-Arc         F444W        2    9    2  2024-02-21  2024-03-27    35.0d    35.0d
+  JADES-GOODS-S      F090W       26   54    7  2022-09-29  2025-08-24  1060.3d     1.0d
+  JADES-GOODS-S      F115W       33  145   10  2022-09-29  2025-10-06  1102.8d     1.0d
+  JADES-GOODS-S      F150W       40  133   15  2022-09-29  2026-02-04  1223.6d     1.0d
+  JADES-GOODS-S      F200W       44  138   17  2022-09-30  2026-02-04  1223.5d     1.0d
+  JADES-GOODS-S      F277W       35   67   11  2022-09-29  2026-02-04  1223.9d     1.0d
+  JADES-GOODS-S      F356W       39   85   15  2022-09-29  2026-02-04  1223.8d     1.0d
+  JADES-GOODS-S      F410M       53  200   10  2022-09-30  2026-01-20  1208.5d     1.0d
+  JADES-GOODS-S      F444W       41   80   16  2022-09-29  2025-10-06  1102.5d     1.0d
+  MACS-J0416         F090W        7   10    3  2022-10-07  2024-11-05   759.9d     1.0d
+  MACS-J0416         F115W        8   63    4  2022-10-07  2024-11-05   759.7d     4.1d
+  MACS-J0416         F150W       10   62    6  2022-10-07  2026-01-10  1190.8d     4.1d
+  MACS-J0416         F200W        8   61    5  2022-10-07  2024-11-04   759.3d     4.3d
+  MACS-J0416         F277W        9   32    4  2022-10-07  2024-11-06   760.9d     1.0d
+  MACS-J0416         F356W        8   27    5  2022-10-07  2024-11-05   759.7d     4.2d
+  MACS-J0416         F410M        7   15    4  2022-10-07  2024-11-05   760.1d     4.5d
+  MACS-J0416         F444W       10   30    5  2022-10-07  2026-01-10  1190.9d     1.7d
+  MACS-J0417         F150W        3    4    2  2022-10-13  2025-10-06  1088.7d     3.6d
+  MACS-J0417         F200W        2   65    2  2022-10-13  2024-12-27   805.9d   805.9d
+  MACS-J0417         F444W        3    3    2  2022-10-13  2025-10-06  1088.5d     3.4d
+  MACS-J0647         F200W        2    2    1  2022-09-23  2023-01-08   107.1d   107.1d
+  MACS-J1149         F090W        4    5    3  2023-05-10  2024-01-24   259.1d     2.0d
+  MACS-J1149         F115W        5    6    3  2023-05-10  2024-01-24   259.0d     1.8d
+  MACS-J1149         F150W        6    8    4  2023-05-11  2025-05-07   727.4d     1.5d
+  MACS-J1149         F200W        4    5    4  2023-05-12  2024-05-08   362.0d    23.9d
+  MACS-J1149         F277W        4    7    3  2023-05-11  2024-01-24   258.8d     1.3d
+  MACS-J1149         F356W        5    5    4  2023-05-12  2024-05-08   362.0d     8.5d
+  MACS-J1149         F410M        4    5    3  2023-05-10  2024-01-24   259.0d     1.9d
+  MACS-J1149         F444W        5    6    3  2023-05-11  2024-01-24   258.8d     1.6d
+  MACS-J1423         F150W        2    4    2  2023-02-26  2026-03-05  1103.6d  1103.6d
+  MACS-J1423         F444W        2    4    2  2023-02-26  2026-03-05  1103.6d  1103.6d
+  MS-0451            F115W        6    6    2  2025-01-23  2025-09-12   231.3d     3.0d
+  MS-0451            F150W        6    6    2  2025-01-23  2025-09-12   231.3d     3.0d
+  MS-0451            F200W        6    6    2  2025-01-23  2025-09-12   231.3d     3.0d
+  MS-0451            F277W        6    6    2  2025-01-23  2025-09-12   231.4d     3.0d
+  MS-0451            F356W        6    6    2  2025-01-23  2025-09-12   231.3d     3.0d
+  MS-0451            F444W        6    6    2  2025-01-23  2025-09-12   231.2d     3.0d
+  NGDEEP             F090W       25   48    7  2022-09-29  2025-08-24  1060.3d     1.0d
+  NGDEEP             F115W       30  104   10  2022-09-29  2025-10-06  1102.8d     1.0d
+  NGDEEP             F150W       39  120   16  2022-09-29  2026-02-04  1223.6d     1.0d
+  NGDEEP             F200W       41  117   16  2022-09-30  2026-02-04  1223.5d     1.0d
+  NGDEEP             F277W       33   63   11  2022-09-29  2026-02-04  1223.9d     1.0d
+  NGDEEP             F356W       37   81   15  2022-09-29  2026-02-04  1223.8d     1.0d
+  NGDEEP             F410M       50  190    9  2022-09-30  2026-01-20  1208.5d     1.0d
+  NGDEEP             F444W       38   75   15  2022-09-29  2025-10-06  1102.5d     1.0d
+  PEARLS-NEP         F090W        5    8    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PEARLS-NEP         F115W        5    9    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PEARLS-NEP         F150W        6   16    1  2022-08-26  2023-05-25   272.6d     1.3d
+  PEARLS-NEP         F200W        6   21    1  2022-08-26  2023-05-25   272.6d     1.3d
+  PEARLS-NEP         F277W        5    8    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PEARLS-NEP         F356W        5    8    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PEARLS-NEP         F410M        5    8    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PEARLS-NEP         F444W        5    8    1  2022-08-26  2023-05-25   272.6d    19.3d
+  PLCK-G165          F090W        5    6    3  2023-03-30  2025-05-20   782.3d    16.6d
+  PLCK-G165          F150W        6    7    4  2023-03-30  2026-03-26  1092.1d    16.6d
+  PLCK-G165          F200W        5    6    3  2023-03-30  2025-05-20   782.3d    16.6d
+  PLCK-G165          F277W        5    6    3  2023-03-30  2025-05-20   782.3d    16.6d
+  PLCK-G165          F356W        5    6    3  2023-03-30  2025-05-20   782.3d    16.6d
+  PLCK-G165          F444W        6    7    4  2023-03-30  2026-03-26  1092.2d    16.6d
+  PRIMER-UDS         F090W       12   29    2  2022-07-29  2024-07-23   724.7d     1.4d
+  PRIMER-UDS         F115W       14   45    4  2022-07-29  2024-12-05   860.5d     1.4d
+  PRIMER-UDS         F150W       16   42    4  2022-07-29  2025-12-08  1227.7d     1.2d
+  PRIMER-UDS         F200W       16   31    4  2022-07-29  2025-12-08  1227.7d     1.2d
+  PRIMER-UDS         F277W       16   25    4  2022-07-29  2025-12-08  1227.8d     1.2d
+  PRIMER-UDS         F356W       16   25    4  2022-07-29  2025-12-08  1227.7d     1.2d
+  PRIMER-UDS         F410M       11   17    1  2022-07-29  2024-07-23   724.7d     1.4d
+  PRIMER-UDS         F444W       14   24    4  2022-07-29  2024-12-05   860.5d     1.4d
+  RXC-J0600          F090W        3    3    3  2024-01-14  2026-01-16   732.5d    48.3d
+  RXC-J0600          F115W        4    4    4  2023-01-18  2026-01-16  1094.1d    48.3d
+  RXC-J0600          F150W        3    3    3  2023-01-18  2026-01-16  1094.2d    48.3d
+  RXC-J0600          F200W        3    3    3  2024-01-15  2026-01-16   732.5d    48.3d
+  RXC-J0600          F277W        3    3    3  2023-01-18  2026-01-16  1094.2d    48.3d
+  RXC-J0600          F356W        3    3    3  2023-01-18  2026-01-16  1094.2d    48.3d
+  RXC-J0600          F410M        2    2    2  2025-11-29  2026-01-16    48.3d    48.3d
+  RXC-J0600          F444W        4    4    4  2023-01-18  2026-01-16  1094.2d    48.3d
+  RXJ-2129           F150W        2    2    2  2022-10-06  2025-10-29  1118.7d  1118.7d
+  RXJ-2129           F444W        2    2    2  2022-10-06  2025-10-29  1118.7d  1118.7d
+  SMACS-0723         F090W        2    2    2  2022-06-07  2024-05-11   704.7d   704.7d
+  SMACS-0723         F444W        2    2    2  2022-06-07  2024-05-11   704.7d   704.7d
+  Sunrise-Arc        F090W        2    2    1  2022-07-30  2023-01-10   163.9d   163.9d
+  Sunrise-Arc        F115W        2    2    1  2022-07-30  2023-01-10   163.9d   163.9d
+  Sunrise-Arc        F150W        2    2    2  2022-07-30  2025-07-08  1074.2d  1074.2d
+  Sunrise-Arc        F277W        2    2    1  2022-07-30  2023-01-10   163.8d   163.8d
+  Sunrise-Arc        F356W        2    2    1  2022-07-30  2023-01-10   163.9d   163.9d
+  Sunrise-Arc        F444W        2    2    2  2022-07-30  2025-07-08  1074.3d  1074.3d
+
+------------------------------------------------------------------------------------------
+  FIELDS WITH MULTI-EPOCH NIRCam DATA: 23 of 29
+------------------------------------------------------------------------------------------
+    Abell-1689         5 usable filter pair(s); best: F150W span 870d, 2 epochs
+    Abell-2744         8 usable filter pair(s); best: F200W span 1086d, 19 epochs
+    Abell-370          7 usable filter pair(s); best: F150W span 1125d, 8 epochs
+    Abell-S1063        6 usable filter pair(s); best: F150W span 1094d, 4 epochs
+    Bullet-Cluster     7 usable filter pair(s); best: F150W span 367d, 2 epochs
+    CEERS-EGS          7 usable filter pair(s); best: F115W span 1096d, 5 epochs
+    Cosmic-Gems        2 usable filter pair(s); best: F150W span 906d, 2 epochs
+    Dragon-Arc         4 usable filter pair(s); best: F444W span 35d, 2 epochs
+    JADES-GOODS-S      8 usable filter pair(s); best: F277W span 1224d, 35 epochs
+    MACS-J0416         8 usable filter pair(s); best: F444W span 1191d, 10 epochs
+    MACS-J0417         3 usable filter pair(s); best: F150W span 1089d, 3 epochs
+    MACS-J0647         1 usable filter pair(s); best: F200W span 107d, 2 epochs
+    MACS-J1149         8 usable filter pair(s); best: F150W span 727d, 6 epochs
+    MACS-J1423         2 usable filter pair(s); best: F150W span 1104d, 2 epochs
+    MS-0451            6 usable filter pair(s); best: F277W span 231d, 6 epochs
+    NGDEEP             8 usable filter pair(s); best: F277W span 1224d, 33 epochs
+    PEARLS-NEP         8 usable filter pair(s); best: F090W span 273d, 5 epochs
+    PLCK-G165          6 usable filter pair(s); best: F444W span 1092d, 6 epochs
+    PRIMER-UDS         8 usable filter pair(s); best: F277W span 1228d, 16 epochs
+    RXC-J0600          8 usable filter pair(s); best: F150W span 1094d, 3 epochs
+    RXJ-2129           2 usable filter pair(s); best: F150W span 1119d, 2 epochs
+    SMACS-0723         2 usable filter pair(s); best: F090W span 705d, 2 epochs
+    Sunrise-Arc        6 usable filter pair(s); best: F444W span 1074d, 2 epochs
+
+------------------------------------------------------------------------------------------
+  SINGLE-EPOCH FIELDS (no time-domain possible — NIRCam visited once):
+------------------------------------------------------------------------------------------
+    CLG-J1212
+    El-Gordo
+    MACS-J0329
+    PLCK-G191
+    RXC-J0032
+    RXC-J2211
+
+==========================================================================================
+  RECOMMENDED DOWNLOAD TARGETS (for transient search)
+==========================================================================================
+  Abell-1689         → F200W   (2 epochs, span 870d, 2 program(s))
+  Abell-2744         → F200W   (19 epochs, span 1086d, 7 program(s))
+  Abell-370          → F200W   (10 epochs, span 1125d, 6 program(s))
+  Abell-S1063        → F200W   (3 epochs, span 1010d, 3 program(s))
+  Bullet-Cluster     → F200W   (2 epochs, span 66d, 1 program(s))
+  CEERS-EGS          → F200W   (5 epochs, span 912d, 4 program(s))
+  Cosmic-Gems        → F444W   (2 epochs, span 906d, 2 program(s))
+  Dragon-Arc         → F277W   (2 epochs, span 35d, 2 program(s))
+  JADES-GOODS-S      → F200W   (44 epochs, span 1224d, 17 program(s))
+  MACS-J0416         → F200W   (8 epochs, span 759d, 5 program(s))
+  MACS-J0417         → F200W   (2 epochs, span 806d, 2 program(s))
+  MACS-J0647         → F200W   (2 epochs, span 107d, 1 program(s))
+  MACS-J1149         → F200W   (4 epochs, span 362d, 4 program(s))
+  MACS-J1423         → F444W   (2 epochs, span 1104d, 2 program(s))
+  MS-0451            → F200W   (6 epochs, span 231d, 2 program(s))
+  NGDEEP             → F200W   (41 epochs, span 1224d, 16 program(s))
+  PEARLS-NEP         → F200W   (6 epochs, span 273d, 1 program(s))
+  PLCK-G165          → F200W   (5 epochs, span 782d, 3 program(s))
+  PRIMER-UDS         → F200W   (16 epochs, span 1228d, 4 program(s))
+  RXC-J0600          → F200W   (3 epochs, span 732d, 3 program(s))
+  RXJ-2129           → F444W   (2 epochs, span 1119d, 2 program(s))
+  SMACS-0723         → F444W   (2 epochs, span 705d, 2 program(s))
+  Sunrise-Arc        → F277W   (2 epochs, span 164d, 1 program(s))
+
+==========================================================================================
+  NEXT STEP
+==========================================================================================
+  ✓ Time-domain pipeline is feasible with MAST data.
+    Next: write a download script targeting the recommended pairs above.

@@ -1,0 +1,213 @@
+================================================================================
+  CONSOLIDATED VALIDATION REPORT
+================================================================================
+  Date: 2026-04-05 07:18
+  Total candidates: 24,345
+  Photo-z crosscheck: Yes
+
+  VERDICT DISTRIBUTION:
+    VALIDATED             824  (  3.4%)
+    LIKELY_REAL         9,446  ( 38.8%)
+    NEEDS_SPECTRO       4,960  ( 20.4%)
+    DOWNGRADED          6,422  ( 26.4%)
+    REJECTED            2,693  ( 11.1%)
+
+------------------------------------------------------------------------------------------
+  FIELD                 TOTAL  VALID LIKELY  SPECT   DOWN REJECT
+------------------------------------------------------------------------------------------
+  Abell-1689               42      0      1     12     23      6
+  Abell-2744               21      0      1      6     11      3
+  Abell-370                 9      0      1      5      1      2
+  Abell-S1063              27      0      4     12     11      0
+  Bullet-Cluster         5380    310   1130   1153   2296    491
+  CLG-J1212                88      0      5     42     26     15
+  Cosmic-Gems            1188     47    330    303    392    116
+  Dragon-Arc             3159     74   1172    551   1098    264
+  El-Gordo                102      1     11     56     18     16
+  MACS-J0329             2318     65    876    411    586    380
+  MACS-J0416                3      0      1      0      0      2
+  MACS-J0417               43      0      1     25     10      7
+  MACS-J0647               49      0      4     27     15      3
+  MACS-J1149               38      0      5     21      8      4
+  MACS-J1423                8      0      1      3      1      3
+  MS-0451                2126     49    889    414    420    354
+  PLCK-G165                87      0      9     53     15     10
+  PLCK-G191                55      0      6     31      8     10
+  RXC-J0032              4072    150   1924    757    791    450
+  RXC-J0600              2030     53   1203    395    227    152
+  RXC-J2211              2329     66   1250    438    287    288
+  RXJ-2129               1039      9    609    172    167     82
+  SMACS-0723               66      0      4     37      7     18
+  Sunrise-Arc              66      0      9     36      4     17
+
+  SED PHYSICS FLAGS:
+    Flat SED (no Balmer break at z>5):      92
+    V-shape SED (F200W dip):               474
+    Likely foreground (S/N>150 at z>5):     60
+    Poor fit (reduced chi2 > 10):         3302
+    Crowded contamination (z>5, fg<1"):    432
+    Low F200W S/N (break unconstrained):   687
+
+--------------------------------------------------------------------------------
+  HIGH-Z CANDIDATES (z > 5): 1108
+    VALIDATED              1
+    LIKELY_REAL           47
+    NEEDS_SPECTRO        710
+    DOWNGRADED           206
+    REJECTED             144
+
+----------------------------------------------------------------------------------------------------
+  VALIDATED CANDIDATES (824):
+  FIELD                     ID      z    z_f    z_c   dz_n    S/N Class             Agree
+  Bullet-Cluster         10456   0.27   0.27   0.23  0.031   4568 galaxy             good
+  Bullet-Cluster          6604   0.40   0.40   0.34  0.039   4523 galaxy             good
+  RXC-J0600               4020   0.39   0.39   0.34  0.034   4100 galaxy             good
+  RXC-J0032              16563   0.34   0.34   0.29  0.034   2662 galaxy             good
+  RXC-J2211               8140   0.40   0.40   0.35  0.043   2447 galaxy             good
+  Bullet-Cluster          8156   0.37   0.37   0.31  0.048   2347 galaxy             good
+  RXC-J2211               5737   0.36   0.36   0.32  0.035   2321 galaxy             good
+  RXC-J0032              15403   0.33   0.33   0.29  0.030   2209 galaxy             good
+  RXC-J0032              15400   0.35   0.35   0.29  0.044   1723 galaxy             good
+  RXC-J2211               6381   0.38   0.38   0.32  0.041   1565 galaxy             good
+  RXC-J2211              10257   0.34   0.34   0.29  0.036   1387 galaxy             good
+  RXC-J2211               5317   0.36   0.36   0.30  0.042   1325 galaxy             good
+  RXC-J2211               6953   0.36   0.36   0.30  0.041   1166 galaxy             good
+  RXC-J0600               1624   0.56   0.56   0.56  0.002   1160 galaxy        excellent
+  Bullet-Cluster          9090   0.26   0.26   0.23  0.029   1100 galaxy             good
+  RXC-J2211               7305   0.35   0.35   0.30  0.041   1091 galaxy             good
+  RXC-J0032               9186   0.36   0.36   0.30  0.045    959 galaxy             good
+  MACS-J0329              6633   1.68   1.68   1.56  0.045    926 galaxy             good
+  RXC-J2211               8353   0.41   0.41   0.34  0.047    854 galaxy             good
+  RXC-J0600              10492   0.33   0.33   0.30  0.022    852 galaxy             good
+  RXC-J2211               6689   0.36   0.36   0.30  0.044    763 galaxy             good
+  RXC-J2211               6395   0.37   0.37   0.32  0.043    709 galaxy             good
+  RXC-J2211               5491   0.36   0.36   0.31  0.035    686 galaxy             good
+  RXC-J0032              18833   1.70   1.70   1.72  0.008    666 galaxy        excellent
+  Bullet-Cluster         16159   1.26   1.26   1.25  0.003    666 galaxy        excellent
+  Bullet-Cluster         10090   3.26   3.26   3.24  0.007    629 galaxy        excellent
+  Bullet-Cluster         11226   2.00   2.00   1.99  0.004    614 galaxy        excellent
+  RXC-J2211               9214   0.38   0.38   0.31  0.048    597 galaxy             good
+  Dragon-Arc             17814   1.04   1.04   1.04  0.001    586 galaxy        excellent
+  Bullet-Cluster          6981   0.20   0.32   0.32  0.000    571 galaxy        excellent
+  RXC-J0032              18416   1.04   1.04   1.04  0.001    555 galaxy        excellent
+  Bullet-Cluster         11333   2.31   2.31   2.31  0.001    505 galaxy        excellent
+  MACS-J0329               748   2.25   2.25   2.21  0.013    503 galaxy        excellent
+  RXC-J0032              15490   0.33   0.23   0.22  0.002    501 galaxy        excellent
+  RXC-J0600                549   0.36   0.36   0.30  0.047    497 galaxy             good
+  Bullet-Cluster         10661   0.18   0.15   0.14  0.003    487 galaxy        excellent
+  MACS-J0329              4016   1.71   1.71   1.72  0.003    463 galaxy        excellent
+  RXC-J0600               6037   2.31   2.31   2.28  0.008    456 galaxy        excellent
+  RXC-J0032              18791   2.18   2.18   2.10  0.028    451 galaxy             good
+  Bullet-Cluster          7859   0.48   0.48   0.47  0.006    430 galaxy        excellent
+  RXC-J0600               1507   2.71   2.71   2.68  0.010    426 galaxy        excellent
+  RXC-J0032              16744   2.50   2.50   2.60  0.026    424 galaxy             good
+  RXC-J0032              11283   1.53   1.53   1.54  0.005    407 galaxy        excellent
+  Bullet-Cluster         22416   2.68   2.68   2.66  0.004    398 galaxy        excellent
+  RXC-J2211               5506   3.57   3.57   3.57  0.001    395 galaxy        excellent
+  RXC-J2211               5685   0.33   0.33   0.28  0.039    385 galaxy             good
+  RXC-J0600               2990   2.61   2.61   2.51  0.031    382 galaxy             good
+  MS-0451                 1721   2.45   2.45   2.45  0.002    376 high_z_candidate  excellent
+  RXC-J2211               7552   0.35   0.35   0.29  0.047    368 galaxy             good
+  RXC-J0600               3010   2.72   2.72   2.68  0.012    365 galaxy        excellent
+  Cosmic-Gems            13511   1.73   1.73   1.75  0.007    364 galaxy        excellent
+  Dragon-Arc             10487   0.57   0.71   0.70  0.009    362 galaxy        excellent
+  Cosmic-Gems            13669   2.99   2.99   2.91  0.020    341 galaxy             good
+  Bullet-Cluster          7236   0.56   0.45   0.44  0.007    336 galaxy        excellent
+  Bullet-Cluster         10277   0.17   0.17   0.13  0.032    326 galaxy             good
+  Bullet-Cluster          6341   1.57   1.57   1.66  0.034    301 galaxy             good
+  Bullet-Cluster          5794   1.54   1.54   1.54  0.001    300 galaxy        excellent
+  RXC-J2211               6911   0.99   0.99   1.01  0.007    297 galaxy        excellent
+  Bullet-Cluster         11668   0.23   0.23   0.23  0.001    296 galaxy        excellent
+  Bullet-Cluster          7745   0.27   0.27   0.22  0.044    289 galaxy             good
+  RXC-J0032              12982   1.62   1.62   1.63  0.004    288 galaxy        excellent
+  Bullet-Cluster           969   0.30   0.30   0.25  0.038    282 galaxy             good
+  Bullet-Cluster          3149   3.03   3.03   2.94  0.022    281 galaxy             good
+  Dragon-Arc             18950   0.56   0.56   0.55  0.001    280 galaxy        excellent
+  Cosmic-Gems            13435   2.26   2.26   2.22  0.011    269 galaxy        excellent
+  MACS-J0329              3036   2.97   2.97   2.88  0.023    253 galaxy             good
+  Bullet-Cluster         19040   0.64   0.64   0.65  0.006    245 galaxy        excellent
+  RXC-J0600               2190   2.75   2.75   2.72  0.007    231 galaxy        excellent
+  Bullet-Cluster          8490   0.15   0.15   0.10  0.047    227 galaxy             good
+  Bullet-Cluster         13357   0.38   0.48   0.48  0.001    224 galaxy        excellent
+  Bullet-Cluster         20072   4.94   4.94   4.93  0.001    223 ambiguous     excellent
+  Bullet-Cluster          2208   0.30   0.30   0.25  0.039    220 galaxy             good
+  RXC-J2211               9084   0.56   0.56   0.56  0.002    220 galaxy        excellent
+  Bullet-Cluster          1412   0.25   0.25   0.22  0.028    219 galaxy             good
+  Bullet-Cluster         15765   2.49   2.49   2.65  0.046    218 galaxy             good
+  Bullet-Cluster         21624   1.75   1.75   1.76  0.001    217 galaxy        excellent
+  Dragon-Arc              1872   0.51   0.43   0.42  0.012    214 galaxy        excellent
+  Cosmic-Gems            21352   2.98   2.98   2.95  0.007    200 galaxy        excellent
+  MACS-J0329              5639   1.66   1.66   1.65  0.004    198 high_z_candidate  excellent
+  MACS-J0329              3411   1.67   1.67   1.68  0.006    198 galaxy        excellent
+  RXC-J0032              26897   0.29   0.29   0.29  0.000    194 galaxy        excellent
+  Bullet-Cluster          3384   0.31   0.16   0.16  0.001    194 galaxy        excellent
+  MS-0451                 5874   2.50   2.50   2.48  0.006    193 galaxy        excellent
+  RXC-J0032               1042   0.88   0.88   0.87  0.004    193 galaxy        excellent
+  Bullet-Cluster         11895   0.39   0.26   0.26  0.002    190 galaxy        excellent
+  MACS-J0329              2698   1.53   1.53   1.53  0.001    190 galaxy        excellent
+  Bullet-Cluster         21125   2.45   2.45   2.44  0.003    187 galaxy        excellent
+  MS-0451                 3195   1.06   1.06   1.05  0.005    187 galaxy        excellent
+  RXC-J0032              29561   0.02   0.02   0.06  0.043    186 galaxy             good
+  Bullet-Cluster         17549   1.63   1.63   1.54  0.037    186 ambiguous          good
+  RXC-J0032              29564   0.21   0.21   0.21  0.001    184 galaxy        excellent
+  Bullet-Cluster          6274   0.31   0.31   0.25  0.048    182 galaxy             good
+  Bullet-Cluster         11437   0.15   0.15   0.10  0.044    176 galaxy             good
+  RXC-J0032              26622   1.67   1.67   1.67  0.000    175 high_z_candidate  excellent
+  Bullet-Cluster         13498   0.40   0.25   0.25  0.002    175 galaxy        excellent
+  RXC-J0032              21382   0.58   0.58   0.61  0.021    174 galaxy             good
+  Bullet-Cluster         14152   0.57   0.36   0.37  0.002    173 galaxy        excellent
+  RXC-J0600                920   2.77   2.77   2.73  0.009    172 galaxy        excellent
+  RXC-J0032              18029   0.66   0.66   0.65  0.008    171 galaxy        excellent
+  RXC-J0600               6441   0.57   0.57   0.55  0.008    170 galaxy        excellent
+
+----------------------------------------------------------------------------------------------------
+  VALIDATED/LIKELY at z>5 (48):
+  FIELD                     ID      z    z_f    z_c   dz_n    S/N Verdict              Agree
+  RXC-J0600                990   5.17    nan    nan    nan    131 LIKELY_REAL        unknown
+  RXC-J2211               9459   6.00    nan    nan    nan    122 LIKELY_REAL        unknown
+  RXC-J2211              16114   5.98    nan    nan    nan    105 LIKELY_REAL        unknown
+  RXC-J2211               6912   5.92    nan    nan    nan     91 LIKELY_REAL        unknown
+  RXC-J2211              15730   5.71    nan    nan    nan     83 LIKELY_REAL        unknown
+  RXC-J0600              13401   5.16    nan    nan    nan     80 LIKELY_REAL        unknown
+  RXC-J0600              12216   5.17    nan    nan    nan     78 LIKELY_REAL        unknown
+  Bullet-Cluster         14100   5.66   5.66   5.53  0.020     63 LIKELY_REAL      excellent
+  MACS-J0329              4104   5.83    nan    nan    nan     58 LIKELY_REAL        unknown
+  Dragon-Arc             12519   5.07   5.07   5.05  0.002     57 VALIDATED        excellent
+  MS-0451                  846   7.04    nan    nan    nan     56 LIKELY_REAL        unknown
+  RXC-J0600              14478   5.83    nan    nan    nan     54 LIKELY_REAL        unknown
+  RXC-J0600               3150   5.17    nan    nan    nan     50 LIKELY_REAL        unknown
+  RXC-J2211              15943   5.79    nan    nan    nan     49 LIKELY_REAL        unknown
+  MACS-J0329             16705   5.96    nan    nan    nan     49 LIKELY_REAL        unknown
+  RXC-J2211              14691   5.17    nan    nan    nan     48 LIKELY_REAL        unknown
+  RXC-J0600               1097   5.16    nan    nan    nan     46 LIKELY_REAL        unknown
+  MACS-J0329             14948   5.76    nan    nan    nan     45 LIKELY_REAL        unknown
+  RXC-J0600              12981   5.15   5.15   5.14  0.002     45 LIKELY_REAL      excellent
+  MACS-J0329              1876   6.41   6.41   5.68  0.109     41 LIKELY_REAL       marginal
+  RXC-J2211              14983   6.45    nan    nan    nan     41 LIKELY_REAL        unknown
+  RXC-J2211               6793   5.64    nan    nan    nan     40 LIKELY_REAL        unknown
+  RXC-J0600              11862   5.16    nan    nan    nan     39 LIKELY_REAL        unknown
+  MACS-J0329              6582   5.53    nan    nan    nan     38 LIKELY_REAL        unknown
+  RXC-J0600              13361   5.15    nan    nan    nan     37 LIKELY_REAL        unknown
+  RXC-J0600               5479   5.19    nan    nan    nan     37 LIKELY_REAL        unknown
+  MACS-J0329             15743   5.32    nan    nan    nan     37 LIKELY_REAL        unknown
+  RXC-J0600               6265   5.15    nan    nan    nan     36 LIKELY_REAL        unknown
+  MACS-J0329              2983   5.70    nan    nan    nan     35 LIKELY_REAL        unknown
+  RXC-J0600              13972   5.15    nan    nan    nan     35 LIKELY_REAL        unknown
+  Abell-2744             13202   8.24   8.24   8.40  0.018     34 LIKELY_REAL      excellent
+  Bullet-Cluster         19916   5.23   5.23   5.29  0.008     32 LIKELY_REAL      excellent
+  MACS-J0329             16654   5.21    nan    nan    nan     32 LIKELY_REAL        unknown
+  RXC-J2211              10270   5.06    nan    nan    nan     32 LIKELY_REAL        unknown
+  RXC-J2211              16090   5.16    nan    nan    nan     28 LIKELY_REAL        unknown
+  MS-0451                15628   5.07    nan    nan    nan     28 LIKELY_REAL        unknown
+  RXC-J2211               9557   5.17    nan    nan    nan     26 LIKELY_REAL        unknown
+  RXC-J0600               2313   5.16    nan    nan    nan     25 LIKELY_REAL        unknown
+  RXC-J2211              15196   5.15   5.15   5.20  0.009     24 LIKELY_REAL      excellent
+  RXC-J0600                906   5.18    nan    nan    nan     24 LIKELY_REAL        unknown
+  RXC-J0600               1039   5.16    nan    nan    nan     21 LIKELY_REAL        unknown
+  RXC-J2211               6851   5.38    nan    nan    nan     20 LIKELY_REAL        unknown
+  RXC-J2211               6444   5.95    nan    nan    nan     19 LIKELY_REAL        unknown
+  RXC-J0600               4110   5.16    nan    nan    nan     17 LIKELY_REAL        unknown
+  El-Gordo               14438   5.89   5.83   5.65  0.026     15 LIKELY_REAL           good
+  Cosmic-Gems            22178   5.39    nan    nan    nan     14 LIKELY_REAL        unknown
+  MACS-J0329              3741   5.65    nan    nan    nan     14 LIKELY_REAL        unknown
+  Sunrise-Arc            10868   5.51    nan    nan    nan     11 LIKELY_REAL        unknown

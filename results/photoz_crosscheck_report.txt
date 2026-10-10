@@ -1,0 +1,110 @@
+================================================================================
+  MULTI-TEMPLATE PHOTO-Z CROSS-CHECK REPORT
+================================================================================
+  Date: 2026-04-03 22:11
+  Total candidates: 16,397
+  Templates: FSPS (tweak_fsps_QSF_12_v3) vs Carnall SFH-z
+  Time: 2549s (42.5 min)
+
+  AGREEMENT DISTRIBUTION:
+    excellent        5,201  ( 31.7%)
+    good             1,860  ( 11.3%)
+    marginal         1,960  ( 12.0%)
+    disagreement     7,031  ( 42.9%)
+    unknown            345  (  2.1%)
+
+  CONFIDENCE DISTRIBUTION:
+    high               500  (  3.0%)
+    medium           1,282  (  7.8%)
+    low-medium       4,720  ( 28.8%)
+    low              9,895  ( 60.3%)
+
+  HIGH-Z CANDIDATES (z_pipeline > 5): 759
+    Agreement excellent: 274
+    Agreement good: 76
+    Agreement marginal: 79
+    Agreement disagreement: 319
+    Confidence high: 23
+    Confidence medium: 19
+    Confidence low-medium: 196
+    Confidence low: 521
+
+--------------------------------------------------------------------------------
+  TOP DISAGREEMENTS (photo-z mismatch, 7031 total):
+  FIELD                     ID z_pipe z_fsps z_carn   dz_n    S/N ODDS_f ODDS_c
+  Cosmic-Gems            13147   0.47   0.24   1.19  0.767  19002  0.929  0.979
+  RXC-J0032              18641   2.55   2.55   2.08  0.153   5746  0.555  0.591
+  Cosmic-Gems            12869   0.17   0.17   1.94  1.526   3757  0.847  0.978
+  Dragon-Arc              5499   5.82   0.08   0.73  0.604   3508  0.926  0.736
+  Dragon-Arc             17963   1.31   0.18   0.02  0.162   2391  0.478  0.594
+  RXC-J0600               7996   0.82   0.27   1.14  0.695   2334  0.488  0.254
+  Bullet-Cluster         10980   0.26   0.18   2.59  2.035   2276  0.293  0.246
+  MACS-J0329              6102   1.72   0.37   3.02  1.941   2165  0.788  0.372
+  Cosmic-Gems            13557   1.80   3.99   2.73  0.337   2104  0.152  0.158
+  Dragon-Arc             17999   1.22   0.24   4.90  3.738   2049  0.972  0.674
+  Dragon-Arc              6790   2.40   5.91   0.78  2.890   2003  0.326  0.595
+  RXC-J0032              17256   0.77   2.47   6.56  1.178   1964  0.154  0.116
+  RXC-J2211               7278   0.69   0.18   6.67  5.495   1663  0.446  0.047
+  MACS-J0329              1528   0.90   0.28   3.39  2.419   1621  0.999  0.738
+  RXC-J0032              11754   2.10   0.18   2.30  1.809   1523  0.160  0.266
+  Bullet-Cluster          8185   1.57   0.25   1.28  0.826   1413  0.976  0.649
+  RXC-J0032              17377   2.03   2.03   1.48  0.219   1393  0.592  0.341
+  RXC-J0032              11866   2.17   0.18   1.80  1.366   1276  0.883  0.511
+  Dragon-Arc             15122   1.64   0.61   4.76  2.587   1228  0.642  0.366
+  Bullet-Cluster          8703   0.27   2.75   0.49  1.518   1223  0.872  0.991
+  Dragon-Arc             14351   2.44   0.58   0.31  0.204   1210  0.574  0.894
+  Bullet-Cluster          3148   1.57   0.34   1.52  0.883   1153  0.548  0.796
+  RXC-J0600               3181   1.04   1.04   1.67  0.306   1111  0.462  0.133
+  Bullet-Cluster          9458   0.25   3.81   1.93  0.646   1111  0.253  0.245
+  Bullet-Cluster          8658   0.33   0.02   2.33  2.250   1100  0.725  0.911
+  Dragon-Arc              1108   1.16   1.16   1.79  0.290   1086  0.391  0.234
+  Bullet-Cluster           696   0.80   0.80   4.86  2.260   1048  0.519  0.459
+  RXC-J0032              13075   1.97   1.97   1.49  0.194   1048  0.475  0.378
+  Dragon-Arc              3474   5.98   0.23   0.02  0.209   1018  0.854  0.976
+  Bullet-Cluster         14116   0.79   0.04   2.33  2.219    998  0.910  0.991
+
+--------------------------------------------------------------------------------
+  HIGH-CONFIDENCE HIGH-Z CANDIDATES (42):
+  FIELD                     ID z_pipe z_fsps z_carn   dz_n    S/N     Conf
+  MACS-J1423             43416   5.47   5.47   5.48  0.002   1276   medium
+  Bullet-Cluster         19071   5.04   5.04   5.00  0.007    843   medium
+  RXC-J2211               7942   5.05   5.05   5.14  0.015    286     high
+  Bullet-Cluster          7797   5.41   5.41   5.46  0.007    234     high
+  RXC-J0600               6128   5.17   5.17   5.16  0.002    222   medium
+  Dragon-Arc             26756   8.02   8.02   8.09  0.008    159     high
+  RXC-J2211              12175   5.05   5.05   5.17  0.019    101     high
+  RXC-J0032              26354   5.71   5.71   5.66  0.008     70   medium
+  RXC-J0032              29588   5.19   5.19   5.29  0.017     69     high
+  Bullet-Cluster         18445   5.00   5.00   4.88  0.021     65   medium
+  Abell-370              34044   5.03   5.03   4.87  0.026     64     high
+  Dragon-Arc             12519   5.07   5.07   5.05  0.002     57     high
+  RXC-J2211              12447   5.05   5.05   5.16  0.018     55     high
+  Bullet-Cluster          1711   5.16   5.16   5.15  0.001     55     high
+  Dragon-Arc             11392   5.05   5.05   5.05  0.001     49   medium
+  RXC-J0600               1015   5.16   5.16   5.15  0.001     47     high
+  Bullet-Cluster         12173   6.52   6.52   6.36  0.022     45   medium
+  Bullet-Cluster          4568   5.05   5.05   5.02  0.005     43     high
+  Bullet-Cluster         19360   5.13   5.13   4.95  0.029     38     high
+  RXC-J0600               6810   5.16   5.16   5.16  0.000     37     high
+  RXC-J0600              14545   5.16   5.16   5.16  0.000     36   medium
+  Bullet-Cluster         18499   5.16   5.16   5.15  0.002     35     high
+  Abell-2744             13202   8.24   8.24   8.40  0.018     34   medium
+  Bullet-Cluster          5107   5.03   5.03   4.79  0.040     33   medium
+  Bullet-Cluster          5205   5.02   5.02   5.00  0.004     33     high
+  RXC-J0032              28044   5.41   5.41   5.39  0.002     31   medium
+  Bullet-Cluster          5523   6.90   6.90   6.79  0.014     27   medium
+  MACS-J0329             16382   5.69   5.69   5.65  0.005     27   medium
+  Bullet-Cluster         17048   5.16   5.16   5.15  0.002     27     high
+  RXC-J0032              26624   6.51   6.51   6.42  0.013     25     high
+  Bullet-Cluster          2495   5.15   5.15   5.14  0.002     24     high
+  MS-0451                 2902   5.77   5.77   5.75  0.002     24   medium
+  Bullet-Cluster         10622   5.01   5.01   4.96  0.008     24   medium
+  Bullet-Cluster         16682   5.71   5.71   5.74  0.006     24   medium
+  Bullet-Cluster         16864   5.16   5.16   5.14  0.003     24     high
+  Cosmic-Gems            22045   5.16   5.16   5.15  0.002     22     high
+  Dragon-Arc             17715   8.46   8.46   8.57  0.012     22     high
+  Bullet-Cluster           273   5.16   5.16   5.14  0.003     20     high
+  Dragon-Arc             25716   7.28   7.28   7.14  0.017     18   medium
+  El-Gordo               14438   5.89   5.83   5.65  0.026     15   medium
+  PLCK-G191               8838   8.75   8.75   8.85  0.010     13     high
+  El-Gordo                  73   6.76   6.76   6.77  0.002     12   medium

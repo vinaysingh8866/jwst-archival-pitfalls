@@ -1,0 +1,50 @@
+================================================================================
+  JWST EPOCH INDEX — local archive multi-epoch inventory
+================================================================================
+  Workspaces scanned:      29
+  Total mosaics indexed:   181
+  Unique (field, filter):  180
+
+--------------------------------------------------------------------------------
+  USABLE FOR DIFFERENCE IMAGING (1 pairs, ≥2 epochs ≥7d apart):
+--------------------------------------------------------------------------------
+  FIELD                FILTER     N PROG    EARLIEST      LATEST    SPAN
+  Abell-2744           F090W      2    2  2023-08-01  2025-05-24  661.3d
+
+--------------------------------------------------------------------------------
+  FIELDS WITH MULTI-EPOCH COVERAGE: 1 of 29
+--------------------------------------------------------------------------------
+    Abell-2744           (1 usable filter pair)
+
+--------------------------------------------------------------------------------
+  SINGLE-EPOCH FIELDS (need MAST download for time-domain work):
+--------------------------------------------------------------------------------
+    Abell-1689
+    Abell-S1063
+    Bullet-Cluster
+    CEERS-EGS
+    CLG-J1212
+    Cosmic-Gems
+    Dragon-Arc
+    El-Gordo
+    JADES-GOODS-S
+    MACS-J0329
+    MACS-J0417
+    MACS-J0647
+    MS-0451
+    NGDEEP
+    PLCK-G165
+    PLCK-G191
+    RXC-J0032
+    RXC-J0600
+    RXC-J2211
+    RXJ-2129
+    SMACS-0723
+    Sunrise-Arc
+
+================================================================================
+  NEXT STEP
+================================================================================
+  ✗ Insufficient multi-epoch data locally.
+    Run MAST query for re-visits before proceeding:
+    scripts/query_mast_epochs.py --fields <list>
